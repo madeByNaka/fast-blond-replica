@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,21 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Cores personalizadas da Beauty Pro Academy
+				beauty: {
+					pink: '#e91e63',
+					'pink-light': '#f8bbd9',
+					'pink-dark': '#ad1457',
+					purple: '#9c27b0',
+					'purple-light': '#ce93d8',
+					'purple-dark': '#6a1b9a',
+					gold: '#ffc107',
+					'gold-light': '#fff3c4',
+					'gold-dark': '#ff8f00',
+					dark: '#1a1a1a',
+					'dark-light': '#2c2c2c',
+					gray: '#f5f5f5'
 				}
 			},
 			borderRadius: {
@@ -84,11 +100,35 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'pulse-glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 10px rgba(233, 30, 99, 0.5)'
+					},
+					'50%': {
+						boxShadow: '0 0 25px rgba(233, 30, 99, 0.8)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'pulse-glow': 'pulse-glow 2s infinite'
+			},
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				heading: ['Poppins', 'system-ui', 'sans-serif']
 			}
 		}
 	},
