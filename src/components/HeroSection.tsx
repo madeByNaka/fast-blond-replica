@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
 import { ArrowDown, CheckCircle, Play } from 'lucide-react';
 
 const HeroSection = () => {
-  const checkoutUrl = "https://pay.hotmart.com/E98072819A?checkoutMode=10&bid=1748886539700";
+  const checkoutUrl = "https://pay.hotmart.com/W99912615Y?checkoutMode=10";
   const [showVideo, setShowVideo] = useState(false);
 
   return (

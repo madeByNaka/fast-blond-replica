@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Check } from 'lucide-react';
 
 const WhatYouLearnSection = () => {
-  const checkoutUrl = "https://pay.hotmart.com/E98072819A?checkoutMode=10&bid=1748886539700";
+  const checkoutUrl = "https://pay.hotmart.com/W99912615Y?checkoutMode=10";
 
   const learningItems = [
     "Técnicas avançadas de mechas para resultados profissionais.",

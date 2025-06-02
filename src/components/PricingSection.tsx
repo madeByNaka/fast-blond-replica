@@ -3,7 +3,7 @@ import React from 'react';
 import { Star } from 'lucide-react';
 
 const PricingSection = () => {
-  const checkoutUrl = "https://pay.hotmart.com/E98072819A?checkoutMode=10&bid=1748886539700";
+  const checkoutUrl = "https://pay.hotmart.com/W99912615Y?checkoutMode=10";
 
   return (
     <section className="py-16 bg-gradient-to-r from-beauty-pink to-beauty-purple text-white">

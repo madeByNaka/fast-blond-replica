@@ -3,7 +3,7 @@ import React from 'react';
 import { X, Check } from 'lucide-react';
 
 const ProblemSection = () => {
-  const checkoutUrl = "https://pay.hotmart.com/E98072819A?checkoutMode=10&bid=1748886539700";
+  const checkoutUrl = "https://pay.hotmart.com/W99912615Y?checkoutMode=10";
 
   return (
     <section className="py-16 bg-white">
