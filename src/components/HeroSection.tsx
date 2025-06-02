@@ -43,6 +43,21 @@ const HeroSection = () => {
             </div>
           </div>
           
+          <div className="mb-8 max-w-4xl mx-auto">
+            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/3OWmYXu-jYU"
+                title="Método Fast Blond - Beauty Pro Academy"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="absolute inset-0"
+              ></iframe>
+            </div>
+          </div>
+          
           <a 
             href={checkoutUrl}
             target="_blank"
