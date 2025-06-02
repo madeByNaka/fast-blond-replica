@@ -3,7 +3,7 @@ import { ArrowDown, CheckCircle, Play } from 'lucide-react';
 const HeroSection = () => {
   const checkoutUrl = "https://pay.hotmart.com/W99912615Y?checkoutMode=10";
   const [showVideo, setShowVideo] = useState(false);
-  return <section className="bg-gradient-to-b from-beauty-gray to-white py-0">
+  return <section className="bg-gradient-to-b from-beauty-gray to-white py-[4px]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="mb-8">
