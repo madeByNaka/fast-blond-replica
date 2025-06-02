@@ -3,6 +3,8 @@ import React from 'react';
 import { ArrowDown, CheckCircle } from 'lucide-react';
 
 const HeroSection = () => {
+  const checkoutUrl = "https://pay.hotmart.com/E98072819A?checkoutMode=10&bid=1748886539700";
+
   return (
     <section className="bg-gradient-to-b from-beauty-gray to-white py-16">
       <div className="container mx-auto px-4">
@@ -41,9 +43,14 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <button className="bg-gradient-to-r from-beauty-pink to-beauty-purple text-white text-xl font-bold py-4 px-8 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300 animate-pulse-glow">
+          <a 
+            href={checkoutUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-beauty-pink to-beauty-purple text-white text-xl font-bold py-4 px-8 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300 animate-pulse-glow"
+          >
             Comece Agora (R$ 97)
-          </button>
+          </a>
         </div>
       </div>
     </section>

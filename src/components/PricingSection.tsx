@@ -3,6 +3,8 @@ import React from 'react';
 import { Star } from 'lucide-react';
 
 const PricingSection = () => {
+  const checkoutUrl = "https://pay.hotmart.com/E98072819A?checkoutMode=10&bid=1748886539700";
+
   return (
     <section className="py-16 bg-gradient-to-r from-beauty-pink to-beauty-purple text-white">
       <div className="container mx-auto px-4">
@@ -46,9 +48,14 @@ const PricingSection = () => {
                 </p>
               </div>
               
-              <button className="w-full bg-gradient-to-r from-beauty-pink to-beauty-purple text-white text-xl font-bold py-4 px-8 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300 animate-pulse-glow">
+              <a 
+                href={checkoutUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-gradient-to-r from-beauty-pink to-beauty-purple text-white text-xl font-bold py-4 px-8 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300 animate-pulse-glow"
+              >
                 Comece Agora
-              </button>
+              </a>
             </div>
           </div>
           

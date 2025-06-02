@@ -3,6 +3,8 @@ import React from 'react';
 import { Check } from 'lucide-react';
 
 const WhatYouLearnSection = () => {
+  const checkoutUrl = "https://pay.hotmart.com/E98072819A?checkoutMode=10&bid=1748886539700";
+
   const learningItems = [
     "Técnicas avançadas de mechas para resultados profissionais.",
     "Como criar loiros perfeitos em diferentes tipos de cabelo.",
@@ -33,9 +35,14 @@ const WhatYouLearnSection = () => {
             para que você possa <strong>aplicar no dia seguinte e já ver os resultados</strong>!
           </p>
           
-          <button className="bg-gradient-to-r from-beauty-pink to-beauty-purple text-white text-xl font-bold py-4 px-8 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+          <a 
+            href={checkoutUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-beauty-pink to-beauty-purple text-white text-xl font-bold py-4 px-8 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+          >
             Comece Agora
-          </button>
+          </a>
         </div>
       </div>
     </section>

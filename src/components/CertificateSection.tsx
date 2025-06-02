@@ -1,7 +1,8 @@
-
 import React from 'react';
 
 const CertificateSection = () => {
+  const checkoutUrl = "https://pay.hotmart.com/E98072819A?checkoutMode=10&bid=1748886539700";
+
   return (
     <section className="py-16 bg-beauty-gray">
       <div className="container mx-auto px-4">
@@ -23,9 +24,14 @@ const CertificateSection = () => {
             />
           </div>
           
-          <button className="bg-gradient-to-r from-beauty-pink to-beauty-purple text-white text-xl font-bold py-4 px-8 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+          <a 
+            href={checkoutUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-beauty-pink to-beauty-purple text-white text-xl font-bold py-4 px-8 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+          >
             Comece Agora
-          </button>
+          </a>
         </div>
       </div>
     </section>
