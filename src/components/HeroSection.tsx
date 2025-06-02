@@ -43,8 +43,8 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className="mb-8 max-w-4xl mx-auto">
-            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+          <div className="mb-8 max-w-sm mx-auto">
+            <div className="relative w-full aspect-[9/16] rounded-lg overflow-hidden shadow-lg">
               <iframe
                 width="100%"
                 height="100%"
