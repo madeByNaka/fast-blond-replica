@@ -1,6 +1,13 @@
 
 import React from 'react';
 import { Star } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -31,16 +38,30 @@ const TestimonialsSection = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img 
-                src={testimonial.image} 
-                alt={`Depoimento ${testimonial.id}`}
-                className="w-full h-auto"
-              />
-            </div>
-          ))}
+        <div className="max-w-6xl mx-auto">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {testimonials.map((testimonial) => (
+                <CarouselItem key={testimonial.id} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img 
+                      src={testimonial.image} 
+                      alt={`Depoimento ${testimonial.id}`}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
         </div>
       </div>
     </section>
