@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const ForWhoSection = () => {
@@ -27,11 +26,6 @@ const ForWhoSection = () => {
       number: "05.",
       title: "Para quem está cansada de abaixar o preço para não perder clientes e quer aprender a cobrar o que realmente merece.",
       image: "https://beautyproacademy.com.br/wp-content/uploads/2025/02/image_fx_-4.png"
-    },
-    {
-      number: "06.",
-      title: "Para quem deseja otimizar o tempo de atendimento, conseguindo atender mais clientes e ter mais tempo livre.",
-      image: "https://beautyproacademy.com.br/wp-content/uploads/2025/02/image_fx_-5.png"
     }
   ];
 
